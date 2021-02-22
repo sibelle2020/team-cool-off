@@ -1,0 +1,133 @@
+/* FONT IMPORTS -------------------> */
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
+@import url("https://use.typekit.net/kbt6udt.css");
+@import url("https://fonts.googleapis.com/css2?family=Kulim+Park:wght@200&display=swap");
+
+/* GENERAL ------------------------> */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(0, 14, 44);
+}
+
+:root {
+  --text-color: #fcfcfc;
+  --shade-color: rgb(39, 0, 90);
+  --yellow-color: #d6e228;
+  --purple-color: #e3a5eb;
+  --pink-color: #ff32c2;
+
+  --headline-font: "termina", sans-serif;
+  --sub-font: "Gruppo", cursive;
+  --text-font: "Kulim Park", sans-serif;
+  --main-text-color: #fcfcfc;
+
+  --white-space: 1rem;
+}
+
+/* HEADER STYLING -------------------------------> */
+.top-header {
+  padding: 2vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-ul {
+  display: flex;
+  padding-top: 1rem;
+}
+
+.nav-li {
+  list-style: none;
+}
+
+.navlink {
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: var(--sub-font);
+  font-weight: ;
+  color: #e3a5eb;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.logo {
+  font-family: var(--headline-font);
+  font-weight: 900;
+  font-style: normal;
+  color: var(--pink-color);
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.navlink:hover {
+  color: rgb(255, 202, 246);
+}
+
+/* MAIN --------------------------------------------------> */
+
+main {
+  margin: 4vw;
+  color: var(--yellow-color);
+  font-family: var(--text-font);
+  font-weight: normal;
+  font-style: normal;
+  position: relative;
+}
+
+/* ARTIST GRID ----------------------------------------> */
+
+.artist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 0.5fr));
+  gap: 3rem;
+  z-index: 1;
+}
+
+/* STYLING --------------------------------------------> */
+
+.the-artist {
+  position: relative;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  opacity: 0.3;
+  cursor: crosshair;
+}
+
+img:hover {
+  opacity: 0.6;
+}
+
+h3 {
+  position: absolute;
+  width: 100%;
+  top: 30px;
+  left: 40px;
+  opacity: 1;
+  font-size: 1.6rem;
+}
+
+/* BUTTON ------------------------------------------------> */
+
+.next-event {
+  margin: 2vw;
+  width: 80%;
+  text-align: center;
+  padding: 20px;
+  transition: bottom 0.35s;
+  font-family: var(--text-font);
+  border: var(--yellow-color) 3px solid;
+  background: none;
+  color: #d6e228;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}

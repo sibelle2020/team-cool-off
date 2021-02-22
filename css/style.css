@@ -1,0 +1,27 @@
+body {
+  background-color: rgb(33, 33, 92);
+}
+
+main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.box1 {
+  width: 300px;
+  height: 30px;
+  background-color: blueviolet;
+}
+
+.box2 {
+  width: 30px;
+  height: 30px;
+  background-color: chartreuse;
+}
+
+.box2 {
+  width: 30px;
+  height: 30px;
+  background-color: crimson;
+}
