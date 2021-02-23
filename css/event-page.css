@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
+@import url("https://use.typekit.net/kbt6udt.css");
+@import url("https://fonts.googleapis.com/css2?family=Kulim+Park:wght@200&display=swap");
+
+body {
+  background-color: rgb(0, 14, 44);
+}
+
+:root {
+  --color: #fcfcfc;
+  --color-2: rgb(39, 0, 90);
+  --color-3: #d6e228;
+  --color-4: #e3a5eb;
+  --color-5: #ff32c2;
+
+  --primary-font: "Gruppo", cursive;
+  --secondary-font: "Kulim Park", sans-serif;
+  --main-text-color: #fcfcfc;
+
+  --white-space: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
