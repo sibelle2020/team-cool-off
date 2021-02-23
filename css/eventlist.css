@@ -141,3 +141,8 @@ body {
 /* HEADER MEDIA QUERIES --------------------------------------> */
 
 /* POPULAR EVENTS ----------------------------------------------> */
+
+.events-wrapper {
+  display: flex;
+  justify-content: center;
+}
