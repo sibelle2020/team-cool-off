@@ -5,37 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/eventlist.css" />
   </head>
   <body>
     <header>
       <div class="logo-container"></div>
+      <h2 class="logo">discover live.</h2>
       <nav class="navbar">
-        <ul class="navul">
-          <li><a href="" class="navlinks"></a></li>
-          <li><a href="" class="navlinks"></a></li>
-          <li><a href="" class="navlinks"></a></li>
+        <ul class="nav-ul">
+          <li class="nav-li"><a href="#" class="navlink">DISCOVER</a></li>
+          <li class="nav-li"><a href="#" class="navlink">PROGRAM</a></li>
+          <li class="nav-li"><a href="#" class="navlink">ARTISTS</a></li>
+          <li class="nav-li"><a href="#" class="navlink">FAQ</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <main>
-        <h1></h1>
-        <section class="popular-now">
-          <h2></h2>
-          <div class="top-events"></div>
-        </section>
-        <div class="event-list">
-          <div class="sorting">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="events"></div>
-        </div>
-      </main>
+    <main class="eventlistpage">
+      <div class="event-grid">
+        <template id="event-template">
+          <article class="event">
+            <img src="" alt="" class="event-img" />
+            <h2></h2>
+            <p></p>
+          </article>
+        </template>
+      </div>
     </main>
 
     <footer>
@@ -54,6 +49,6 @@
       </div>
     </footer>
 
-    <script src=""></script>
+    <script src="/js/eventlist.js"></script>
   </body>
 </html>

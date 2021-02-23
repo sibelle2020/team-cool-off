@@ -1,0 +1,70 @@
+/* FONT IMPORTS -------------------> */
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
+@import url("https://use.typekit.net/kbt6udt.css");
+@import url("https://fonts.googleapis.com/css2?family=Kulim+Park:wght@200&display=swap");
+
+/* GENERAL ------------------------> */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(0, 14, 44);
+}
+
+:root {
+  --text-color: #fcfcfc;
+  --shade-color: rgb(39, 0, 90);
+  --yellow-color: #d6e228;
+  --purple-color: #e3a5eb;
+  --pink-color: #ff32c2;
+
+  --headline-font: "termina", sans-serif;
+  --sub-font: "Gruppo", cursive;
+  --text-font: "Kulim Park", sans-serif;
+  --main-text-color: #fcfcfc;
+
+  --white-space: 1rem;
+}
+
+/* HEADER STYLING -------------------------------> */
+.top-header {
+  padding: 2vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-ul {
+  display: flex;
+  padding-top: 1rem;
+}
+
+.nav-li {
+  list-style: none;
+}
+
+.navlink {
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: var(--sub-font);
+  font-weight: ;
+  color: #e3a5eb;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.logo {
+  font-family: var(--headline-font);
+  font-weight: 900;
+  font-style: normal;
+  color: var(--pink-color);
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.navlink:hover {
+  color: rgb(255, 202, 246);
+}
