@@ -34,3 +34,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* Image and top-info */
+
+.top-info h1 {
+  font-family: var(--headline-font);
+}
