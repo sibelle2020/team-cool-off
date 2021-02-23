@@ -35,6 +35,47 @@ img {
   height: auto;
 }
 
+/* HEADER STYLING -------------------------------> */
+
+.top-header {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-ul {
+  display: flex;
+  padding-top: 1rem;
+}
+
+.nav-li {
+  list-style: none;
+}
+
+.navlink {
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: var(--sub-font);
+  font-weight: normal;
+  color: #e3a5eb;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.logo {
+  font-family: var(--headline-font);
+  font-weight: 900;
+  font-style: normal;
+  color: var(--pink-color);
+  font-size: 2rem;
+  text-transform: capitalize;
+  width: 30%;
+}
+
+.navlink:hover {
+  color: rgb(255, 202, 246);
+}
 /* Image and top-info */
 
 .top-info h1 {
