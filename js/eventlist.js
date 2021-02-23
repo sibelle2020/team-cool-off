@@ -1,8 +1,18 @@
 //KEY: 6033bd605ad3610fb5bb64f6
 //ENDPOINT: https://s21kea-d06b.restdb.io/rest/events
+//&q={"genre":{"$elemMatch":"pop"}}
+const urlParams = new URLSearchParams(window.location.search);
+//in the URL grab ID and store it's value in id
+const genre = urlParams.get("genre");
+let urlall = "https://s21kea-d06b.restdb.io/rest/events";
+let urlpopular =
+  "https://s21kea-d06b.restdb.io/rest/events?sort=popularity&max=3";
 
-//const url = "https://s21kea-d06b.restdb.io/rest/events";
-const url = "https://s21kea-d06b.restdb.io/rest/events?sort=popularity&max=3";
+if (genre) {
+  console.log(genre);
+  urlall = urlall + `?q={"genre":{"$elemMatch":"${genre}"}}`;
+  urlpopular = urlpopular + `&q={"genre":{"$elemMatch":"${genre}"}}`;
+}
 
 const options = {
   headers: {
@@ -10,17 +20,30 @@ const options = {
   },
 };
 
-fetch(url, options)
+fetch(urlpopular, options)
   .then(function (res) {
     return res.json();
   })
   .then(function (data) {
     console.log(data);
-    testList(data);
+    popularList(data);
   });
 
-function testList(data) {
+fetch(urlall, options)
+  .then(function (res) {
+    return res.json();
+  })
+  .then(function (data) {
+    console.log(data);
+    allEvents(data);
+  });
+
+function popularList(data) {
   data.forEach(showPopular);
+}
+
+function allEvents(data) {
+  console.log(data);
 }
 
 function showPopular(popular) {
@@ -31,7 +54,7 @@ function showPopular(popular) {
   const copy = template.cloneNode(true);
 
   //change content
-  copy.querySelector("h3").textContent = popular.artistname;
+  copy.querySelector("h3").textContent = popular.artist;
 
   //grab parent
   const parent = document.querySelector(".events-wrapper");
