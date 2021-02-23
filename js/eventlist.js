@@ -20,6 +20,8 @@ const options = {
   },
 };
 
+//FETCH THE DATA
+
 fetch(urlpopular, options)
   .then(function (res) {
     return res.json();
@@ -44,7 +46,10 @@ function popularList(data) {
 
 function allEvents(data) {
   console.log(data);
+  data.forEach(showAll);
 }
+
+//POPULAR EVENTS
 
 function showPopular(popular) {
   console.log(popular);
@@ -61,3 +66,7 @@ function showPopular(popular) {
   //append
   parent.appendChild(copy);
 }
+
+//ALL EVENTS
+
+function showAll(event) {}
