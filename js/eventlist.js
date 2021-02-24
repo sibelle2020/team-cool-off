@@ -64,7 +64,7 @@ function showPopular(popular) {
   copy.querySelector("p").textContent = popular.eventname;
   copy.querySelector(
     "img"
-  ).src = `https://s21kea-d06b.restdb.io/media/${popular.eventimg}?s=w`;
+  ).src = `https://s21kea-d06b.restdb.io/media/${popular.eventimg[0]}?s=w`;
 
   if (genre) {
     document.querySelector(".genre-text").textContent = genre;
@@ -78,4 +78,9 @@ function showPopular(popular) {
 
 //ALL EVENTS
 
-function showAll(event) {}
+function showAll(event) {
+  //grab the template
+  const template = document.querySelector("#event-template").content;
+  //clone it
+  const copy = template.cloneNode(true);
+}
