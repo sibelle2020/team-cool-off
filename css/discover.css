@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
+@import url("https://use.typekit.net/kbt6udt.css");
+@import url("https://fonts.googleapis.com/css2?family=Kulim+Park:wght@200&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(0, 14, 44);
+}
+
+:root {
+  --color: #fcfcfc;
+  --color-2: rgb(0, 14, 44);
+  --color-3: #d6e228;
+  --color-4: #e3a5eb;
+  --color-5: #ff32c2;
+
+  --primary-font: "Gruppo", cursive;
+  --secondary-font: "Kulim Park", sans-serif;
+  --tertiary-font: "termina", sans-serif;
+
+  --main-text-color: #fcfcfc;
+  --white-space: 1rem;
+}
+
+h1 {
+  color: var(--color);
+  font-family: var(--tertiary-font);
+  font-weight: 900;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+.top-header {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-ul {
+  display: flex;
+  padding-top: 1rem;
+}
+
+.nav-li {
+  list-style: none;
+}
+
+.navlink {
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: var(--primary-font);
+  font-weight: normal;
+  color: #e6c7eb;
+  font-style: normal;
+  font-weight: normal;
+}
+.navlink:hover {
+  color: rgb(252, 227, 247);
+}
+h2 {
+  color: var(--color-3);
+  font-family: var(--tertiary-font);
+  font-weight: 900;
+  font-style: normal;
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  line-height: 6rem;
+  padding-top: 4rem;
+}
+
+#button-wrapper {
+  padding: 9rem 6rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button {
+  font-family: var(--primary-font);
+  color: var(--color-3);
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 4px;
+  background: none;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  margin: 0 1rem 1rem 0;
+  border: 2px solid var(--color-3);
+}
+button:focus,
+button:active,
+button:focus-within {
+  outline: 0;
+}
+
+button {
+  transition: all 1s;
+}
+button:hover {
+  box-shadow: 0px 0px 10px 10px var(--color-3);
+  color: var(--color-5);
+}
+
+.popular-events {
+  padding-bottom: 25rem;
+}
+
+.click {
+  text-align: left;
+  font-size: 5.5rem;
+  padding: 3.5rem;
+}
+
+#about {
+  font-family: var(--secondary-font);
+  color: var(--color);
+  font-size: 2rem;
+  padding: 3rem 10rem 0rem 10rem;
+}
+
+.toptext-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+}
+
+.popular-text {
+  color: var(--color-5);
+  font-family: var(--tertiary-font);
+  font-weight: 900;
+  font-style: normal;
+  font-size: 7rem;
+}
+
+.events-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 1.5rem 8rem 0rem 8rem;
+}
+
+.p-event {
+  background-color: var(--color-4);
+  height: 10rem;
+  width: 23rem;
+}
+
+h3 {
+  color: var(--color-2);
+  font-family: var(--tertiary-font);
+  font-size: 2rem;
+}
+
+h4 {
+  color: var(--color-2);
+  font-family: var(--primary-font);
+  font-size: 1.5rem;
+}
+p {
+  color: var(--color-2);
+  font-family: var(--tertiary-font);
+  font-size: 1rem;
+}
+
+#livenow-wrapper {
+  display: flex;
+  align-content: space-between;
+  padding-left: 4rem;
+}
+
+h5 {
+  color: var(--color);
+  font-family: var(--tertiary-font);
+  font-weight: 900;
+  font-style: normal;
+  font-size: 5rem;
+  line-height: 6rem;
+  padding-left: 5rem;
+  padding-top: 6rem;
+}
+
+#map {
+  width: 60%;
+  height: 60%;
+  transform: rotate(8deg);
+}
