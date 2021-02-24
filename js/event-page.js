@@ -21,8 +21,15 @@ fetch(url, options)
 function showEvent(event) {
   console.log(event);
   //grab the template
+  const template = document.querySelector("template").content;
   //clone it
+  const copy = template.cloneNode(true);
   //change content
+  copy.querySelector(".artist").textContent = event.artist;
+  copy.querySelector(".eventname").textContent = event.eventname;
+  copy.querySelector(".date").textContent = event.startdate;
   //grab parent
+  const parent = document.querySelector("main");
   //append
+  parent.appendChild(copy);
 }
