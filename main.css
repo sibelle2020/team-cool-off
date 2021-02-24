@@ -76,7 +76,7 @@ h2 {
 }
 
 #button-wrapper {
-    padding: 6rem 6rem;
+    padding: 9rem 6rem;
     display: flex;
     justify-content: flex-end;
 }
@@ -112,7 +112,9 @@ button:hover {
 }
 
 
-
+.popular-events {
+    padding-bottom: 25rem;
+}
 
 .click {
     text-align: left;
@@ -169,4 +171,27 @@ p {
     color: var(--color-2);
     font-family: var(--tertiary-font);
     font-size: 1rem;
+}
+
+#livenow-wrapper {
+    display: flex;
+    align-content: space-between;
+    padding-left: 4rem;
+}
+
+h5 {
+    color: var(--color);
+    font-family: var(--tertiary-font);
+    font-weight: 900;
+    font-style: normal;
+    font-size: 5rem;
+    line-height: 6rem;
+    padding-left: 5rem;
+    padding-top: 6rem;
+}
+
+#map {
+    width: 60%;
+    height: 60%;
+    transform: rotate(8deg);
 }
