@@ -25,9 +25,20 @@ function showEvent(event) {
   //clone it
   const copy = template.cloneNode(true);
   //change content
+  copy.querySelector(
+    "img"
+  ).src = `https://s21kea-d06b.restdb.io/media/${event.eventimg}?s=w`;
   copy.querySelector(".artist").textContent = event.artist;
   copy.querySelector(".eventname").textContent = event.eventname;
-  copy.querySelector(".date").textContent = event.startdate;
+  copy.querySelector(".date").textContent = event.datetime;
+  copy.querySelector(".time span").textContent = event.datetime;
+
+  if (event.price) {
+    copy.querySelector(".price span").textContent = event.price + " DKK";
+  } else {
+    copy.querySelector(".price span").textContent = "FREE";
+  }
+
   //grab parent
   const parent = document.querySelector("main");
   //append
