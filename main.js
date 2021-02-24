@@ -33,7 +33,10 @@ function showPopular(popular) {
     //change content
     copy.querySelector("h3").textContent = popular.artist;
     copy.querySelector("h4").textContent = popular.eventname;
-
+    copy.querySelector("p").textContent = popular.datetime;
+    copy.querySelector(
+        "img"
+      ).src = `https://s21kea-d06b.restdb.io/media/${popular.eventimg}?s=w`;
     //grab parent
     const parent = document.querySelector(".events-wrapper");
     //append child
