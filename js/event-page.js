@@ -38,6 +38,24 @@ function showEvent(event) {
   } else {
     copy.querySelector(".price span").textContent = "FREE";
   }
+  copy.querySelector(".genre .g0").textContent = event.genre[0];
+
+  if (event.genre[1]) {
+    copy.querySelector(".genre .g0").textContent = event.genre[0] + ",";
+    copy.querySelector(".genre .g1").textContent = event.genre[1];
+  }
+
+  if (event.genre[2]) {
+    copy.querySelector(".genre .g1").textContent = event.genre[1] + ",";
+    copy.querySelector(".genre .g2").textContent = event.genre[2];
+  }
+
+  if (event.genre[3]) {
+    copy.querySelector(".genre .g2").textContent = event.genre[2] + ",";
+    copy.querySelector(".genre .g3").textContent = event.genre[3];
+  }
+
+  copy.querySelector(".event-info").innerHTML = event.eventinfo;
 
   //grab parent
   const parent = document.querySelector("main");
