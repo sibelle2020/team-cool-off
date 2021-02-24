@@ -25,15 +25,15 @@
           <h2 class="program-text">PROGRAM</h2>
           <ul class="top-genres">
             <a href="event-list.html?genre=pop">pop</a
-            ><a href="event-list.html">rock</a
-            ><a href="event-list.html">hiphop</a>
+            ><a href="event-list.html?genre=rock">rock</a
+            ><a href="event-list.html?genre=hip-hop">hiphop</a>
           </ul>
           <ul class="bottom-genres">
-            <a href="event-list.html">electronic</a
-            ><a href="event-list.html">jazz</a
-            ><a href="event-list.html">classical</a>
-            <a href="event-list.html">r&b</a>
-            <a href="event-list.html">folk</a>
+            <a href="event-list.html?genre=electronic">electronic</a
+            ><a href="event-list.html?genre=jazz">jazz</a
+            ><a href="event-list.html?genre=classical">classical</a>
+            <a href="event-list.html?genre=RnB">r&b</a>
+            <a href="event-list.html?genre=folk">folk</a>
           </ul>
         </section>
       </div>
@@ -41,11 +41,15 @@
 
     <main class="eventlistpage">
       <article class="popular-events">
-        <h2 class="popular-text">popular events</h2>
+        <div class="toptext-wrapper">
+          <h2 class="popular-text">top events</h2>
+          <h3 class="genre-text">popular</h3>
+        </div>
+
         <div class="events-wrapper">
           <template id="popular-template">
             <section class="p-event">
-              <img src="" alt="" />
+              <img src="/img/test-img.png" alt="test img" />
               <h3></h3>
               <p></p>
             </section>

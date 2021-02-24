@@ -61,6 +61,10 @@ function showPopular(popular) {
   //change content
   copy.querySelector("h3").textContent = popular.artist;
 
+  if (genre) {
+    document.querySelector(".genre-text").textContent = genre;
+  }
+
   //grab parent
   const parent = document.querySelector(".events-wrapper");
   //append
