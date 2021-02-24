@@ -113,11 +113,12 @@ img {
 .bottom-info {
   display: grid;
   grid-template-columns: 35% 1fr;
-  grid-gap: 1rem;
+  grid-template-rows: min-content;
+  grid-gap: 1rem 3rem;
   padding: 10px 30px 0 30px;
 }
 
-button {
+.bottom-info button {
   border: 4px solid var(--yellow-color);
   background-color: transparent;
   color: var(--yellow-color);
@@ -125,4 +126,29 @@ button {
   font-family: var(--sub-font);
   text-transform: uppercase;
   font-size: 1.2rem;
+  max-height: 60px;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.artist-info {
+  grid-area: 1 / 2 / 3 / 3;
+  font-family: var(--text-font);
+  color: var(--purple-color);
+  font-size: 1.1rem;
+}
+
+.bottom-info ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  font-family: var(--sub-font);
+  font-size: 1.5rem;
+  color: var(--yellow-color);
+  background-color: var(--shade-color);
+  padding: 2vw 3vw;
+  /* margin-top: 0rem; */
+  grid-area: 2 / 1 / 3 / 2;
+}
+.bottom-info li {
+  margin: 1rem;
 }
