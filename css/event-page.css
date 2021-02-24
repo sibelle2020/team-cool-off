@@ -1,0 +1,181 @@
+/* FONT IMPORTS -------------------> */
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
+@import url("https://use.typekit.net/kbt6udt.css");
+@import url("https://fonts.googleapis.com/css2?family=Kulim+Park:wght@200&display=swap");
+
+/* GENERAL ------------------------> */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(0, 14, 44);
+  color: #fcfcfc;
+}
+
+:root {
+  --text-color: #fcfcfc;
+  --shade-color: rgb(39, 0, 90);
+  --yellow-color: #d6e228;
+  --purple-color: #e3a5eb;
+  --pink-color: #ff32c2;
+
+  --headline-font: "termina", sans-serif;
+  --sub-font: "Gruppo", cursive;
+  --text-font: "Kulim Park", sans-serif;
+  --main-text-color: #fcfcfc;
+
+  --white-space: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* HEADER STYLING -------------------------------> */
+
+.top-header {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-ul {
+  display: flex;
+  padding-top: 1rem;
+}
+
+.nav-li {
+  list-style: none;
+}
+
+.navlink {
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: var(--sub-font);
+  font-weight: normal;
+  color: #e3a5eb;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.logo {
+  font-family: var(--headline-font);
+  font-weight: 900;
+  font-style: normal;
+  color: var(--main-text-color);
+  font-size: 2rem;
+  text-transform: capitalize;
+  width: 30%;
+}
+
+.navlink:hover {
+  color: rgb(255, 202, 246);
+}
+/* Image and top-info */
+
+.top-area {
+  display: grid;
+  grid-template-rows: 1fr 15%;
+}
+
+.top-area figure {
+  grid-area: 1 / 1 / -1 / -1;
+}
+
+.top-info {
+  grid-area: 2 / 1 / -1 / -1;
+  padding: 0 30px 0 30px;
+  display: flex;
+  flex-direction: column;
+  max-height: 200px;
+}
+
+.top-info h1 {
+  font-family: var(--headline-font);
+  font-size: 2.5rem;
+  line-height: 2rem;
+}
+
+.top-info h2 {
+  font-family: var(--sub-font);
+  font-size: 2.8rem;
+}
+
+.top-info .date {
+  font-family: var(--headline-font);
+  font-size: 1.5rem;
+  /* font-weight: bold; */
+  color: var(--purple-color);
+}
+
+.top-info .time {
+  font-family: var(--sub-font);
+  font-size: 2.5rem;
+  color: var(--pink-color);
+}
+
+/* bottom-info */
+
+.bottom-info {
+  display: grid;
+  grid-template-columns: 35% 1fr;
+  grid-template-rows: min-content;
+  grid-gap: 1rem 3rem;
+  padding: 10px 30px 0 30px;
+}
+
+.side-info {
+  display: flex;
+  flex-direction: column;
+  grid-area: 1 / 1 / -1 / 2;
+}
+.bottom-info button {
+  border: 4px solid var(--yellow-color);
+  background-color: transparent;
+  color: var(--yellow-color);
+  padding: 1vw 4vw;
+  font-family: var(--sub-font);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.bottom-info button:hover {
+  box-shadow: 0px 0px 10px 10px var(--yellow-color);
+  color: var(--pink-color);
+}
+
+.event-info {
+  grid-area: 1 / 2 / -1 / -1;
+  font-family: var(--text-font);
+  color: var(--purple-color);
+  font-size: 1.2rem;
+}
+
+.general-info ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  font-family: var(--sub-font);
+  font-size: 1.5rem;
+  color: var(--yellow-color);
+  background-color: var(--shade-color);
+  padding: 2vw 3vw 2vw 2vw;
+  margin-top: 2rem;
+  min-width: 250px;
+  /* margin-top: 0rem; */
+  /* grid-area: 2 / 1 / 3 / 2; */
+}
+
+.general-info ul span {
+  color: var(--text-color);
+  font-size: 1.8rem;
+}
+
+.bottom-info li {
+  margin: 1rem;
+}
