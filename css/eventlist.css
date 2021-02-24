@@ -36,7 +36,7 @@ body {
 /* HEADER STYLING -------------------------------> */
 .header-wrap {
   background-image: url(/img/program-bg.png);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
@@ -179,8 +179,7 @@ body {
 
 .toptext-wrapper {
   display: flex;
-  justify-content: space-between;
-  padding-top: 8rem;
+  justify-content: center;
 }
 
 .popular-text {
@@ -188,7 +187,7 @@ body {
   font-weight: normal;
   font-style: normal;
   text-transform: capitalize;
-  color: #e3a5eb;
+  color: var(--yellow-color);
   padding-left: 40px;
 }
 
@@ -197,9 +196,11 @@ body {
   font-style: normal;
   text-transform: uppercase;
   font-size: 2.5rem;
-  padding-right: 40px;
+  padding-left: 10px;
   padding-top: 40px;
 }
+
+/* EVENT BOX STYLING ---------------------------------------->*/
 
 .events-wrapper {
   display: flex;
@@ -207,7 +208,50 @@ body {
   padding: 10px;
 }
 
+.p-event {
+  width: 480px;
+  height: 300px;
+  position: relative;
+  margin: 10px;
+}
+
+.p-event::before {
+  width: 50px;
+  height: 50px;
+  background-color: #ff32c2;
+  position: absolute;
+}
+
 .p-event img {
-  max-width: 100%;
+  max-width: 480px;
+}
+
+.info-box {
+  width: 480px;
+  height: 80px;
+  background-color: var(--shade-color);
+  opacity: 0.8;
+  position: absolute;
+  bottom: 0;
   padding: 10px;
+  color: #fcfcfc;
+}
+
+.info-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-flex h3 {
+  font-size: 1.5rem;
+}
+
+.info-flex h4 {
+  font-family: var(--text-font);
+  font-size: 1.5rem;
+}
+
+.info-box p {
+  font-family: var(--sub-font);
+  font-size: 1.3rem;
 }
