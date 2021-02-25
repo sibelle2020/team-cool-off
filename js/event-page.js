@@ -33,6 +33,7 @@ function showEvent(event) {
   copy.querySelector(".eventname").textContent = event.eventname;
   copy.querySelector(".date").textContent = event.datetime;
   copy.querySelector(".time span").textContent = event.datetime;
+  copy.querySelector(".location span").textContent = event.location;
 
   if (event.price) {
     copy.querySelector(".price span").textContent = event.price + " DKK";
