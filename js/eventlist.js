@@ -10,7 +10,7 @@ let urlpopular =
 
 if (genre) {
   console.log(genre);
-  urlall = urlall + `?q={"genre":{"$elemMatch":"${genre}"}}`;
+  urlall = urlall + `&q={"genre":{"$elemMatch":"${genre}"}}`;
   urlpopular = urlpopular + `&q={"genre":{"$elemMatch":"${genre}"}}`;
 }
 
