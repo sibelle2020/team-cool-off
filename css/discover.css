@@ -66,11 +66,19 @@ body {
   font-style: normal;
   font-weight: normal;
 }
+
 .navlink:hover {
   color: rgb(252, 227, 247);
 }
 
 /* DISCOVER STYLING ---------------------------------------------->*/
+
+main {
+  background-image: url(../img/popular-bg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+}
 
 h2 {
   color: var(--color-3);
@@ -94,12 +102,14 @@ h2 {
   font-family: var(--secondary-font);
   color: var(--color);
   font-size: 2rem;
-  align-items: center;
-  width: 80%;
+  width: 80vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 
 #button-wrapper {
-  padding: 9rem 6rem;
+  padding-right: 9rem;
+  padding-top: 5rem;
   display: flex;
   justify-content: flex-end;
 }
@@ -117,7 +127,7 @@ h2 {
   text-transform: uppercase;
   transition: all 0.2s ease;
   cursor: pointer;
-  margin: 0 1rem 1rem 0;
+  margin: 0;
   border: 2px solid var(--color-3);
 }
 button:focus,
@@ -137,13 +147,13 @@ button:hover {
 /* POPULAR EVENTS ------------------------------------------->*/
 
 .popular-events {
-  padding: 5vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 .toptext-wrapper {
   display: flex;
   justify-content: center;
-  padding: 10px;
 }
 
 .popular-text {
@@ -156,14 +166,14 @@ button:hover {
 
 .events-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(480px, auto));
+  grid-template-columns: repeat(auto-fill, minmax(420px, auto));
   justify-content: center;
   gap: 2rem;
 }
 
 .p-event {
-  width: 480px;
-  height: 300px;
+  width: 420px;
+  height: 262.5px;
   position: relative;
   margin: 10px;
   overflow: hidden;
@@ -188,9 +198,9 @@ button:hover {
 }
 
 .info-box {
-  width: 480px;
-  height: 80px;
-  background-color: var(--color-3);
+  width: 420px;
+  height: 100px;
+  background-color: var(--color-2);
   opacity: 0.8;
   position: absolute;
   bottom: 0;
@@ -204,17 +214,17 @@ button:hover {
 }
 
 .info-flex h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .info-flex h4 {
   font-family: var(--text-font);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .info-box p {
   font-family: var(--sub-font);
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 /* LIVE NOW --------------------------------------------------->*/
