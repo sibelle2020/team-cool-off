@@ -251,3 +251,27 @@ h5 {
   height: 60%;
   transform: rotate(8deg);
 }
+
+@media (max-width: 700px) {
+  .nav-ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .top-header {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .navlink {
+    padding: 0;
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    font-size: 2.8rem;
+  }
+}

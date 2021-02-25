@@ -75,6 +75,7 @@ function showEvent(event) {
   }
 
   copy.querySelector(".event-info").innerHTML = event.eventinfo;
+  copy.querySelector(".time span").textContent = event.datetime;
 
   //grab parent
   const parent = document.querySelector("main");
