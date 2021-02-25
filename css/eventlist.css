@@ -226,7 +226,7 @@ main {
   content: "";
   width: 64px;
   height: 64px;
-  background-image: url(..img/dollar-coin.png);
+  background-image: url(../img/dollar-coin.png);
   position: absolute;
   top: 20px;
   left: 20px;
