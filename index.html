@@ -23,6 +23,9 @@
       </section>
     </header>
     <main>
+      <video autoplay muted loop id="animation">
+        <source src="img/3D.mp4" type="video/mp4" />
+      </video>
       <h2>DISCOVER LIVE <br />MUSIC EVENTS ONLINE</h2>
       <p id="about">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -38,16 +41,27 @@
 
       <article class="popular-events">
         <div class="toptext-wrapper">
-          <h4 class="popular-text">TOP EVENTS</h4>
+          <h2 class="popular-text">
+            popular<span style="color: #fcfcfc">NOW</span>
+          </h2>
+          <h3 class="genre-text"></h3>
         </div>
 
         <div class="events-wrapper">
           <template id="popular-template">
             <section class="p-event">
-              <img src="" alt="" />
-              <h3></h3>
-              <p></p>
-              <h4></h4>
+              <a href="event-page.html?id=" class="event-link">
+                <img src="" alt="popular event image" />
+              </a>
+              <a href="event-page.html?id=" class="event-link2">
+                <div class="info-box">
+                  <div class="info-flex">
+                    <h3></h3>
+                    <h4></h4>
+                  </div>
+                  <p></p>
+                </div>
+              </a>
             </section>
           </template>
         </div>
