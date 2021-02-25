@@ -115,3 +115,20 @@ function showAll(event) {
   //append
   parent.appendChild(baby);
 }
+
+function myFunction() {
+  document.querySelector("#myDropdown").classList.toggle("show");
+
+  window.onclick = function (event) {
+    if (!event.target.matches(".dropbtn")) {
+      let dropdowns = document.querySelector(".dropdown-content");
+      let i;
+      for (i = 0; i < dropdowns.clientHeight; i++) {
+        let openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains("show")) {
+          openDropdown.classList.remove("show");
+        }
+      }
+    }
+  };
+}
