@@ -110,8 +110,8 @@ header {
   max-height: 200px;
   position: absolute;
   z-index: 1;
-  bottom: 0;
   left: 0;
+  top: 18rem;
 }
 
 .top-info h1 {
@@ -148,6 +148,7 @@ header {
   grid-template-rows: min-content;
   grid-gap: 1rem 3rem;
   padding: 10px 5vw 0 5vw;
+  position: absolute;
 }
 
 .side-info {
@@ -231,7 +232,7 @@ header {
   }
 
   .bottom-info button {
-    max-width: 400px;
+    padding: 20px;
     font-size: 1.2rem;
   }
 
