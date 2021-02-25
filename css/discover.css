@@ -2,6 +2,7 @@
 @import url("https://use.typekit.net/kbt6udt.css");
 @import url("https://fonts.googleapis.com/css2?family=Kulim+Park:wght@200&display=swap");
 
+/* OVERALL ------------------------------------------------------->*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -27,12 +28,15 @@ body {
   --white-space: 1rem;
 }
 
-h1 {
+/* HEADER STYLING ----------------------------------------------------------->*/
+
+.logo {
   color: var(--color);
   font-family: var(--tertiary-font);
   font-weight: 900;
   font-style: normal;
   font-size: 2rem;
+  text-decoration: none;
 }
 
 .top-header {

@@ -71,6 +71,7 @@ img {
   font-size: 2rem;
   text-transform: capitalize;
   width: 30%;
+  text-decoration: none;
 }
 
 .navlink:hover {
