@@ -66,7 +66,7 @@ function showPopular(popular) {
     "img"
   ).src = `https://s21kea-d06b.restdb.io/media/${popular.eventimg[0]}?s=w`;
 
-  copy.querySelector("a").href = `event-page.html?id=${popular.id}`;
+  copy.querySelector("a").href = `event-page.html?id=${popular._id}`;
 
   if (genre) {
     document.querySelector(".genre-text").textContent = genre;
@@ -94,7 +94,7 @@ function showAll(event) {
     "img"
   ).src = `https://s21kea-d06b.restdb.io/media/${event.eventimg[0]}?s=w`;
 
-  baby.querySelector("a").href = `event-page.html?id=${event.id}`;
+  baby.querySelector("a").href = `event-page.html?id=${event._id}`;
 
   if (genre) {
     document.querySelector(".genre-text2").textContent = genre;
