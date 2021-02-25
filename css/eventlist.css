@@ -125,7 +125,7 @@ body {
 /* POPULAR EVENTS ----------------------------------------------> */
 
 main {
-  background-image: url(/img/topimg.png);
+  background-image: url(../img/topimg.png);
   background-size: 100%;
   background-repeat: no-repeat;
 }
