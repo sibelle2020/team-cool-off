@@ -27,7 +27,7 @@ function showEvent(event) {
   //change content
   copy.querySelector(
     "img"
-  ).src = `https://s21kea-d06b.restdb.io/media/${event.eventimg}?s=w`;
+  ).src = `https://s21kea-d06b.restdb.io/media/${event.eventimg[1]}`;
   copy.querySelector(".artist").textContent = event.artist;
   copy.querySelector(".eventname").textContent = event.eventname;
   copy.querySelector(".date").textContent = event.datetime;
