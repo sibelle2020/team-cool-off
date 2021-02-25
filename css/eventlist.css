@@ -192,7 +192,7 @@ main {
   font-size: 5rem;
   font-weight: 700;
   font-style: normal;
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: var(--pink-color);
 }
 
@@ -209,14 +209,14 @@ main {
 
 .events-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(480px, auto));
+  grid-template-columns: repeat(auto-fill, minmax(420px, auto));
   justify-content: center;
-  gap: 2rem;
+  gap: 5px;
 }
 
 .p-event {
-  width: 480px;
-  height: 300px;
+  width: 420px;
+  height: 262.5px;
   position: relative;
   margin: 10px;
   overflow: hidden;
@@ -241,13 +241,13 @@ main {
 }
 
 .info-box {
-  width: 480px;
-  height: 80px;
+  width: 420px;
+  height: 100px;
   background-color: var(--shade-color);
   opacity: 0.8;
   position: absolute;
   bottom: 0;
-  padding: 10px;
+  padding: 20px;
   color: #fcfcfc;
 }
 
@@ -267,7 +267,7 @@ main {
 
 .info-box p {
   font-family: var(--sub-font);
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 /* ALL EVENTS STYLING -------------------------------------------------------------->*/
@@ -279,9 +279,9 @@ main {
 
 .all-text {
   font-size: 4rem;
-  font-weight: 900;
+  font-weight: 700;
   font-style: normal;
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: var(--pink-color);
 }
 
@@ -296,14 +296,14 @@ main {
 
 .allevents-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(480px, auto));
+  grid-template-columns: repeat(auto-fill, minmax(420px, auto));
   justify-content: center;
   gap: 2rem;
 }
 
 .allevents {
-  width: 480px;
-  height: 300px;
+  width: 420px;
+  height: 262.5px;
   position: relative;
   margin: 10px;
   overflow: hidden;
@@ -328,7 +328,7 @@ main {
 }
 
 .info-box2 {
-  width: 480px;
+  width: 420px;
   height: 80px;
   background-color: var(--shade-color);
   opacity: 0.8;
