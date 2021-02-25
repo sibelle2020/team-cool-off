@@ -161,6 +161,10 @@ main {
   padding: 5vw;
 }
 
+.display-all-events {
+  padding: 5vw;
+}
+
 .toptext-wrapper {
   display: flex;
   justify-content: center;
@@ -199,6 +203,16 @@ main {
   position: relative;
   margin: 10px;
   overflow: hidden;
+}
+
+.p-event.notfree::before {
+  content: "";
+  width: 64px;
+  height: 64px;
+  background-image: url(/img/dollar-coin.png);
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 
 .p-event:hover {
@@ -278,6 +292,16 @@ main {
   overflow: hidden;
 }
 
+.allevents.notfree::before {
+  content: "";
+  width: 64px;
+  height: 64px;
+  background-image: url(/img/dollar-coin.png);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
 .allevents:hover {
   border: #d6e228 2px solid;
 }
@@ -314,4 +338,43 @@ main {
 .info-box2 p {
   font-family: var(--sub-font);
   font-size: 1.3rem;
+}
+
+/* MOBILE VERSION ---------------------------------------->*/
+
+/*@media (max-width: 840px) {
+  .popular-text {
+  }
+}*/
+
+@media (max-width: 700px) {
+  .nav-ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .top-header {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .navlink {
+    padding: 0;
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    font-size: 2.8rem;
+  }
+
+  .popular-events {
+    padding: 8vw;
+  }
+
+  .display-all-events {
+    padding: 8vw;
+  }
 }

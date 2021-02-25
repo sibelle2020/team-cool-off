@@ -72,6 +72,10 @@ function showPopular(popular) {
     document.querySelector(".genre-text").textContent = genre;
   }
 
+  if (popular.price) {
+    copy.querySelector(".p-event").classList.add("notfree");
+  }
+
   //grab parent
   const parent = document.querySelector(".events-wrapper");
   //append
@@ -98,6 +102,10 @@ function showAll(event) {
 
   if (genre) {
     document.querySelector(".genre-text2").textContent = genre;
+  }
+
+  if (event.price) {
+    baby.querySelector(".allevents").classList.add("notfree");
   }
 
   //grab parent
