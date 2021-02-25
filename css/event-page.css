@@ -100,8 +100,8 @@ img {
 
 .top-info h1 {
   font-family: var(--headline-font);
-  font-size: 2.5rem;
-  line-height: 2rem;
+  font-size: 4rem;
+  line-height: 3.5rem;
 }
 
 .top-info h2 {
@@ -169,7 +169,7 @@ img {
   background-color: var(--shade-color);
   padding: 2vw 3vw 2vw 2vw;
   margin-top: 2rem;
-  min-width: 250px;
+  /* min-width: 250px; */
   /* margin-top: 0rem; */
   /* grid-area: 2 / 1 / 3 / 2; */
 }
@@ -181,4 +181,51 @@ img {
 
 .bottom-info li {
   margin: 1rem;
+}
+
+@media (max-width: 950px) {
+  .bottom-info {
+    grid-template-columns: 40% 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .bottom-info {
+    grid-template-columns: 1fr;
+  }
+
+  .side-info {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .event-info {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .bottom-info button {
+    max-width: 400px;
+    font-size: 1.2rem;
+  }
+
+  .top-info h1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  .top-info h2 {
+    font-size: 1.8rem;
+  }
+
+  .top-info .date {
+    font-size: 1.5rem;
+  }
+
+  .general-info ul {
+    line-height: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .general-info ul span {
+    font-size: 1.5rem;
+  }
 }
