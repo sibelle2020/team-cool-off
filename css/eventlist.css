@@ -14,7 +14,7 @@ body {
   background-color: rgb(0, 14, 44);
   color: #fcfcfc;
   font-family: var(--headline-font);
-  font-weight: normal;
+  font-weight: 900;
   font-style: normal;
 }
 
@@ -151,12 +151,13 @@ body {
 
 /* POPULAR EVENTS ----------------------------------------------> */
 
-.popular-events {
+main {
   background-image: url(/img/topimg.png);
   background-size: 100%;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 100vh;
+}
+
+.popular-events {
   padding: 5vw;
 }
 
@@ -183,12 +184,13 @@ body {
   padding-top: 40px;
 }
 
-/* EVENT BOX STYLING ---------------------------------------->*/
+/* TOP EVENT BOX STYLING ---------------------------------------->*/
 
 .events-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(480px, auto));
   justify-content: center;
+  gap: 2rem;
 }
 
 .p-event {
@@ -197,6 +199,10 @@ body {
   position: relative;
   margin: 10px;
   overflow: hidden;
+}
+
+.p-event:hover {
+  border: #d6e228 2px solid;
 }
 
 .p-event img {
@@ -229,6 +235,83 @@ body {
 }
 
 .info-box p {
+  font-family: var(--sub-font);
+  font-size: 1.3rem;
+}
+
+/* ALL EVENTS STYLING -------------------------------------------------------------->*/
+
+.alltext-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.all-text {
+  font-size: 4rem;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: capitalize;
+  color: var(--pink-color);
+}
+
+.genre-text2 {
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding-left: 30px;
+  padding-top: 25px;
+}
+
+.allevents-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(480px, auto));
+  justify-content: center;
+  gap: 2rem;
+}
+
+.allevents {
+  width: 480px;
+  height: 300px;
+  position: relative;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.allevents:hover {
+  border: #d6e228 2px solid;
+}
+
+.allevents img {
+  max-width: 100%;
+}
+
+.info-box2 {
+  width: 480px;
+  height: 80px;
+  background-color: var(--shade-color);
+  opacity: 0.8;
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  color: #fcfcfc;
+}
+
+.info-flex2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-flex2 h3 {
+  font-size: 1.5rem;
+}
+
+.info-flex2 h4 {
+  font-family: var(--text-font);
+  font-size: 1.5rem;
+}
+
+.info-box2 p {
   font-family: var(--sub-font);
   font-size: 1.3rem;
 }

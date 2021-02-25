@@ -4,7 +4,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 //in the URL grab ID and store it's value in id
 const genre = urlParams.get("genre");
-let urlall = "https://s21kea-d06b.restdb.io/rest/events";
+let urlall = "https://s21kea-d06b.restdb.io/rest/events?sort=startdate";
 let urlpopular =
   "https://s21kea-d06b.restdb.io/rest/events?sort=popularity&max=3";
 
@@ -80,7 +80,24 @@ function showPopular(popular) {
 
 function showAll(event) {
   //grab the template
-  const template = document.querySelector("#event-template").content;
+  const template = document.querySelector("#allevents-template").content;
   //clone it
-  const copy = template.cloneNode(true);
+  const baby = template.cloneNode(true);
+
+  //change content
+  baby.querySelector("h3").textContent = event.artist;
+  baby.querySelector("h4").textContent = event.datetime;
+  baby.querySelector("p").textContent = event.eventname;
+  baby.querySelector(
+    "img"
+  ).src = `https://s21kea-d06b.restdb.io/media/${event.eventimg[0]}?s=w`;
+
+  if (genre) {
+    document.querySelector(".genre-text2").textContent = genre;
+  }
+
+  //grab parent
+  const parent = document.querySelector(".allevents-grid");
+  //append
+  parent.appendChild(baby);
 }

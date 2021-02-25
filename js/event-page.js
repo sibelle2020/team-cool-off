@@ -11,7 +11,7 @@ const options = {
   },
 };
 
-const url = `https://s21kea-d06b.restdb.io/rest/events/` + id;
+const url = "https://s21kea-d06b.restdb.io/rest/events/" + id;
 
 // fetch the data
 fetch(url, options)
