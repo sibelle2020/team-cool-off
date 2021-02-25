@@ -174,11 +174,21 @@ img {
   /* grid-area: 2 / 1 / 3 / 2; */
 }
 
+.icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
 .general-info ul span {
   color: var(--text-color);
   font-size: 1.8rem;
+  margin-left: 5px;
 }
 
 .bottom-info li {
+  display: flex;
+  flex-wrap: wrap;
   margin: 1rem;
+  line-height: 2.2rem;
 }
