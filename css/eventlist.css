@@ -169,14 +169,14 @@ main {
 
 .popular-text {
   font-size: 5rem;
-  font-weight: normal;
+  font-weight: 900;
   font-style: normal;
   text-transform: capitalize;
   color: var(--pink-color);
 }
 
 .genre-text {
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
   text-transform: uppercase;
   font-size: 2.5rem;
@@ -248,14 +248,14 @@ main {
 
 .all-text {
   font-size: 4rem;
-  font-weight: normal;
+  font-weight: 900;
   font-style: normal;
   text-transform: capitalize;
   color: var(--pink-color);
 }
 
 .genre-text2 {
-  font-weight: 200;
+  font-weight: 400;
   font-style: normal;
   text-transform: uppercase;
   font-size: 2rem;
