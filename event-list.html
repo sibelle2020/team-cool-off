@@ -27,23 +27,32 @@
         </section>
         <section class="program-header">
           <h2 class="program-text">PROGRAM</h2>
-          <ul class="top-genres">
-            <a href="event-list.html?genre=pop" class="genre-link">pop</a
-            ><a href="event-list.html?genre=rock" class="genre-link">rock</a
-            ><a href="event-list.html?genre=hip-hop" class="genre-link"
-              >hiphop</a
-            >
-          </ul>
-          <ul class="bottom-genres">
-            <a href="event-list.html?genre=electronic" class="genre-link"
-              >electronic</a
-            ><a href="event-list.html?genre=jazz" class="genre-link">jazz</a
-            ><a href="event-list.html?genre=classical" class="genre-link"
-              >classical</a
-            >
-            <a href="event-list.html?genre=RnB" class="genre-link">r&b</a>
-            <a href="event-list.html?genre=folk" class="genre-link">folk</a>
-          </ul>
+
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">
+              <p>Genres</p>
+              <img
+                src="/img/down-chevron.svg"
+                alt="down arrow"
+                class="down-arrow"
+              />
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="event-list.html?genre=pop" class="genre-link">pop</a
+              ><a href="event-list.html?genre=rock" class="genre-link">rock</a
+              ><a href="event-list.html?genre=hip-hop" class="genre-link"
+                >hiphop</a
+              >
+              <a href="event-list.html?genre=electronic" class="genre-link"
+                >electronic</a
+              ><a href="event-list.html?genre=jazz" class="genre-link">jazz</a
+              ><a href="event-list.html?genre=classical" class="genre-link"
+                >classical</a
+              >
+              <a href="event-list.html?genre=RnB" class="genre-link">r&b</a>
+              <a href="event-list.html?genre=folk" class="genre-link">folk</a>
+            </div>
+          </div>
         </section>
       </div>
     </header>
@@ -58,10 +67,10 @@
         <div class="events-wrapper">
           <template id="popular-template">
             <section class="p-event">
-              <a href="event-page.html?id=">
+              <a href="event-page.html?id=" class="event-link">
                 <img src="" alt="popular event image" />
               </a>
-              <a href="event-page.html?id=">
+              <a href="event-page.html?id=" class="event-link2">
                 <div class="info-box">
                   <div class="info-flex">
                     <h3></h3>
@@ -84,10 +93,10 @@
         <div class="allevents-grid">
           <template id="allevents-template">
             <section class="allevents">
-              <a href="event-page.html?id=">
+              <a href="event-page.html?id=" class="event-link">
                 <img src="" alt="event img" />
               </a>
-              <a href="event-page.html?id=">
+              <a href="event-page.html?id=" class="event-link2">
                 <div class="info-box2">
                   <div class="info-flex2">
                     <h3></h3>

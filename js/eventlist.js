@@ -66,7 +66,8 @@ function showPopular(popular) {
     "img"
   ).src = `https://s21kea-d06b.restdb.io/media/${popular.eventimg[0]}?s=w`;
 
-  copy.querySelector("a").href = `event-page.html?id=${popular._id}`;
+  copy.querySelector(".event-link").href = `event-page.html?id=${popular._id}`;
+  copy.querySelector(".event-link2").href = `event-page.html?id=${popular._id}`;
 
   if (genre) {
     document.querySelector(".genre-text").textContent = genre;
@@ -98,7 +99,8 @@ function showAll(event) {
     "img"
   ).src = `https://s21kea-d06b.restdb.io/media/${event.eventimg[0]}?s=w`;
 
-  baby.querySelector("a").href = `event-page.html?id=${event._id}`;
+  baby.querySelector(".event-link").href = `event-page.html?id=${event._id}`;
+  baby.querySelector(".event-link2").href = `event-page.html?id=${event._id}`;
 
   if (genre) {
     document.querySelector(".genre-text2").textContent = genre;
@@ -112,4 +114,21 @@ function showAll(event) {
   const parent = document.querySelector(".allevents-grid");
   //append
   parent.appendChild(baby);
+}
+
+function myFunction() {
+  document.querySelector("#myDropdown").classList.toggle("show");
+
+  window.onclick = function (event) {
+    if (!event.target.matches(".dropbtn")) {
+      let dropdowns = document.querySelector(".dropdown-content");
+      let i;
+      for (i = 0; i < dropdowns.clientHeight; i++) {
+        let openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains("show")) {
+          openDropdown.classList.remove("show");
+        }
+      }
+    }
+  };
 }
