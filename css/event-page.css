@@ -177,13 +177,13 @@ img {
 .icon {
   width: 32px;
   height: 32px;
-  margin-right: 10px;
+  margin-right: 12px;
 }
 
 .general-info ul span {
   color: var(--text-color);
   font-size: 1.8rem;
-  margin-left: 5px;
+  /* margin-left: 5px; */
 }
 
 .bottom-info li {
