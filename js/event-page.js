@@ -50,6 +50,7 @@ function showEvent(event) {
   //clone it
   const copy = template.cloneNode(true);
   //change content
+  copy.querySelector(".location span").textContent = event.location;
 
   if (event.price) {
     copy.querySelector(".price span").textContent = event.price + " DKK";
