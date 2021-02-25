@@ -11,6 +11,7 @@
 
 body {
   background-color: rgb(0, 14, 44);
+  font-family: var(--tertiary-font);
 }
 
 :root {
@@ -31,11 +32,12 @@ body {
 /* HEADER STYLING ----------------------------------------------------------->*/
 
 .logo {
-  color: var(--color);
-  font-family: var(--tertiary-font);
   font-weight: 900;
   font-style: normal;
+  color: #e6c7eb;
   font-size: 2rem;
+  text-transform: capitalize;
+  width: 30%;
   text-decoration: none;
 }
 
@@ -64,9 +66,20 @@ body {
   font-style: normal;
   font-weight: normal;
 }
+
 .navlink:hover {
   color: rgb(252, 227, 247);
 }
+
+/* DISCOVER STYLING ---------------------------------------------->*/
+
+main {
+  background-image: url(../img/popular-bg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
 h2 {
   color: var(--color-3);
   font-family: var(--tertiary-font);
@@ -79,8 +92,24 @@ h2 {
   padding-top: 4rem;
 }
 
+.click {
+  text-align: left;
+  font-size: 5.5rem;
+  padding: 3.5rem;
+}
+
+#about {
+  font-family: var(--secondary-font);
+  color: var(--color);
+  font-size: 2rem;
+  width: 80vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
 #button-wrapper {
-  padding: 9rem 6rem;
+  padding-right: 9rem;
+  padding-top: 5rem;
   display: flex;
   justify-content: flex-end;
 }
@@ -98,7 +127,7 @@ h2 {
   text-transform: uppercase;
   transition: all 0.2s ease;
   cursor: pointer;
-  margin: 0 1rem 1rem 0;
+  margin: 0;
   border: 2px solid var(--color-3);
 }
 button:focus,
@@ -115,66 +144,90 @@ button:hover {
   color: var(--color-5);
 }
 
+/* POPULAR EVENTS ------------------------------------------->*/
+
 .popular-events {
-  padding-bottom: 25rem;
-}
-
-.click {
-  text-align: left;
-  font-size: 5.5rem;
-  padding: 3.5rem;
-}
-
-#about {
-  font-family: var(--secondary-font);
-  color: var(--color);
-  font-size: 2rem;
-  padding: 3rem 10rem 0rem 10rem;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 .toptext-wrapper {
   display: flex;
   justify-content: center;
-  padding-top: 5rem;
 }
 
 .popular-text {
-  color: var(--color-5);
-  font-family: var(--tertiary-font);
+  font-size: 5rem;
   font-weight: 900;
   font-style: normal;
-  font-size: 7rem;
+  text-transform: uppercase;
+  color: var(--color-5);
 }
 
 .events-wrapper {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  padding: 1.5rem 8rem 0rem 8rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(420px, auto));
+  justify-content: center;
+  gap: 2rem;
 }
 
 .p-event {
-  background-color: var(--color-4);
-  height: 10rem;
-  width: 23rem;
+  width: 420px;
+  height: 262.5px;
+  position: relative;
+  margin: 10px;
+  overflow: hidden;
 }
 
-h3 {
-  color: var(--color-2);
-  font-family: var(--tertiary-font);
-  font-size: 2rem;
+.p-event.notfree::before {
+  content: "";
+  width: 64px;
+  height: 64px;
+  background-image: url(/img/dollar-coin.png);
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 
-h4 {
-  color: var(--color-2);
-  font-family: var(--primary-font);
-  font-size: 1.5rem;
+.p-event:hover {
+  border: #d6e228 2px solid;
 }
-p {
-  color: var(--color-2);
-  font-family: var(--tertiary-font);
-  font-size: 1rem;
+
+.p-event img {
+  max-width: 100%;
 }
+
+.info-box {
+  width: 420px;
+  height: 100px;
+  background-color: var(--color-2);
+  opacity: 0.8;
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  color: #fcfcfc;
+}
+
+.info-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-flex h3 {
+  font-size: 1.3rem;
+}
+
+.info-flex h4 {
+  font-family: var(--text-font);
+  font-size: 1.3rem;
+}
+
+.info-box p {
+  font-family: var(--sub-font);
+  font-size: 1.1rem;
+}
+
+/* LIVE NOW --------------------------------------------------->*/
 
 #livenow-wrapper {
   display: flex;

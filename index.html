@@ -23,31 +23,44 @@
       </section>
     </header>
     <main>
-      <h2>DISCOVER LIVE <br />MUSIC EVENTS ONLINE</h2>
-      <p id="about">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
-      </p>
-      <div id="button-wrapper">
-        <a href="event-list.html" class="button-link">
-          <button type="button" class="button">CHECK OUT PROGRAM</button>
-        </a>
+      <div class="tophead-wrapper">
+        <h2>DISCOVER LIVE <br />MUSIC EVENTS ONLINE</h2>
+        <p id="about">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <div id="button-wrapper">
+          <a href="event-list.html" class="button-link">
+            <button type="button" class="button">CHECK OUT PROGRAM</button>
+          </a>
+        </div>
       </div>
 
       <article class="popular-events">
         <div class="toptext-wrapper">
-          <h4 class="popular-text">TOP EVENTS</h4>
+          <h2 class="popular-text">
+            popular<span style="color: #fcfcfc">NOW</span>
+          </h2>
+          <h3 class="genre-text"></h3>
         </div>
 
         <div class="events-wrapper">
           <template id="popular-template">
             <section class="p-event">
-              <img src="" alt="" />
-              <h3></h3>
-              <p></p>
-              <h4></h4>
+              <a href="event-page.html?id=" class="event-link">
+                <img src="" alt="popular event image" />
+              </a>
+              <a href="event-page.html?id=" class="event-link2">
+                <div class="info-box">
+                  <div class="info-flex">
+                    <h3></h3>
+                    <h4></h4>
+                  </div>
+                  <p></p>
+                </div>
+              </a>
             </section>
           </template>
         </div>
