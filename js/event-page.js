@@ -18,21 +18,38 @@ fetch(url, options)
   .then((res) => res.json())
   .then((data) => showEvent(data));
 
+// fetch the data2
+fetch(url, options)
+  .then((res) => res.json())
+  .then((data) => showHeader(data));
+
+function showHeader(head) {
+  console.log(head);
+
+  const template2 = document.querySelector("#top-template").content;
+  const baby = template2.cloneNode(true);
+
+  //content
+  baby.querySelector(
+    "img"
+  ).src = `https://s21kea-d06b.restdb.io/media/${head.eventimg[1]}`;
+  baby.querySelector("img").alt = head.eventname;
+  baby.querySelector(".artist").textContent = head.artist;
+  baby.querySelector(".eventname").textContent = head.eventname;
+  baby.querySelector(".date").textContent = head.datetime;
+  //baby.querySelector(".time span").textContent = head.datetime;
+
+  const parent2 = document.querySelector(".template-wrapper");
+  parent2.appendChild(baby);
+}
+
 function showEvent(event) {
   console.log(event);
   //grab the template
-  const template = document.querySelector("template").content;
+  const template = document.querySelector("#main-template").content;
   //clone it
   const copy = template.cloneNode(true);
   //change content
-  copy.querySelector(
-    "img"
-  ).src = `https://s21kea-d06b.restdb.io/media/${event.eventimg[1]}`;
-  copy.querySelector("img").alt = event.eventname;
-  copy.querySelector(".artist").textContent = event.artist;
-  copy.querySelector(".eventname").textContent = event.eventname;
-  copy.querySelector(".date").textContent = event.datetime;
-  copy.querySelector(".time span").textContent = event.datetime;
 
   if (event.price) {
     copy.querySelector(".price span").textContent = event.price + " DKK";
