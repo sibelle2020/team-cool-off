@@ -37,15 +37,21 @@ img {
 
 /* HEADER STYLING -------------------------------> */
 
+header {
+  height: 50vh;
+}
+
 .top-header {
   padding: 30px;
   display: flex;
   justify-content: space-between;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
 }
-
 .nav-ul {
   display: flex;
-  padding-top: 1rem;
+  padding-top: 1.5rem;
 }
 
 .nav-li {
@@ -81,13 +87,21 @@ img {
 
 /* Image and top-info */
 
-.top-area {
+.template-wrapper {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+/* .top-area {
   display: grid;
   grid-template-rows: 1fr 15%;
 }
+ */
 
-.top-area figure {
+.top-area img {
   grid-area: 1 / 1 / -1 / -1;
+  z-index: 0;
 }
 
 .top-info {
